@@ -1,31 +1,9 @@
-# =========================
-# Environment variables
-# =========================
-.env
-.env.*
-
-# =========================
-# Virtual Environments
-# =========================
+# Virtual environment
 langchain/
-venv/
 .venv/
+venv/
 env/
 
-# =========================
-# Python cache
-# =========================
-__pycache__/
-*.pyc
-*.pyo
-
-# =========================
-# Jupyter
-# =========================
-.ipynb_checkpoints/
-
-# =========================
-# OS files
-# =========================
-.DS_Store
-Thumbs.db
+# Environment variables
+.env
+.env.*
