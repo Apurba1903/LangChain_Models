@@ -43,7 +43,7 @@ template = load_prompt('C:/Users/ACER/Desktop/DSMP1/LangChain/4.Prompts/template
 
 if st.button('Summarize'):
     chain = template | model
-    chain.invoke({
+    result = chain.invoke({
         'paper_input':paper_input,
         'style_input':style_input,
         'length_input':length_input
