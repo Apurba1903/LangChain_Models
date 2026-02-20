@@ -17,8 +17,8 @@ model = ChatHuggingFace(llm=llm)
 class Review(TypedDict):
     
     key_themes: Annotated[list[str], "Write down all the key themes discussed in the review in a list"]
-    summary: Annotated[Literal["pos", "neg"], "A brief summary of the review"]
-    sentiment: Annotated[str, "Return sentiment of the review; either Negative, Positive or Neutral"]
+    summary: Annotated[str, "A brief summary of the review"]
+    sentiment: Annotated[Literal["pos", "neg"], "Return sentiment of the review; either Negative, Positive or Neutral"]
     pros: Annotated[Optional[list[str]], "Write down all the pros inside a list"]
     cons: Annotated[Optional[list[str]], "Write down all the cons inside a list"]
     name: Annotated[Optional[str], "Write the name of the Reviewer"]
